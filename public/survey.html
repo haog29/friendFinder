@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <style>
+        .btn{
+            background-color: plum;
+            border-radius: 10px;
+            border: 2px solid black;
+            padding: 5px;
+        }
+        .form-control {
+            background-color: pink;
+            border: 2px solid black;
+            padding: 5px;
+        }
+        .form-survey, #sbtn, #nameIt {
+            display: block;
+            max-width: 300px;
+            margin: auto;
+        }
+        h4, h1, #sbtn {
+            text-align: center;
+        }
+    </style>
+</head>
+<body style="background-color:skyblue">
+    <h1>The Survey...to see if you match:</h1>
+
+    <div class="container">
+        
+    <form id="nameIt">
+            <label for="name">name:   </label>
+            <input id="name" type="text">
+            <br>
+            <label for="link">Picture link:</label>
+            <input id="picLink" type="text">
+            <br>
+            <hr>
+    </form>
+    </div>
+
+    <div class="form-survey">
+            <h4>Question 1:</h4>
+            <label for='question1'><h5>Do you like to dance more than sing?</h5></label>
+            <select class="form-control" id='question1'>
+            <option value='1'>1 Yes! Dancing is life! </option>
+            <option value='2'>2 why not? its in between. Let's go. </option>
+            <option value='3'>3 I just want to sleep! Give me my massage chair. </option>
+        </select>
+        </div>
+        <hr>
+        <br>
+    <div class="form-survey">
+                <h4>Question 2:</h4>
+                <label for='question2'><h5>Do you like producing or making music?</h5></label>
+                <select class="form-control" id='question2'>
+                <option value='1'>1 Making music is a little bit hard. </option>
+                <option value='2'>2 Yes! I love making music. </option>
+                <option value='3'>3 I don't mind, I'm open to anything. </option>
+            </select>
+            </div>
+            <hr>
+            <br>
+    <div class="form-survey">
+                    <h4>Question 3:</h4>
+                    <label for='question3'><h5>Where would you want to go on your extra time? </h5></label>
+                    <select class="form-control" id='question3'>
+                    <option value='1'>1 NBA or Baseball Game! </option>
+                    <option value='2'>2 Somewhere nice and take lots of picture as a remembrance! </option>
+                    <option value='3'>3 Go and do freestyle dancing.</option>
+                </select>
+                </div>
+                <hr>
+                <br>
+  
+    
+
+
+    <div class="submitBtn">
+        <button id='sbtn' class = 'btn'>Submit</button>
+    </div>
+    <br>
+    <br>
+
+    <div class="links" style="text-align: center; ">
+        <a href="api/myFriends">API Friends </a> | <a href="https://github.com/haog29/friendFinder">Github Repo</a>
+
+    </div>
+<div class="modals" style="text-align:center">
+    <div class="content">
+    <div class="exit"> + </div>
+        <img id="img" src="" alt="BTS member's Picture">
+        <p>This BTS member matches you.</p>
+        <h4 id ="member"></h4>
+    </div>
+</div>
+
+
+<div class="w3-container" style="text-align:center">
+        <h2>W3.CSS Modal</h2>
+        <p>Add the w3-card-* class to the w3-modal-content container to display the modal as a card.</p>
+        <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Open Modal</button>
+      
+        <div id="id01" class="w3-modal">
+          <div class="w3-modal-content w3-card-4">
+            <header class="w3-container w3-teal"> 
+              <span onclick="document.getElementById('id01').style.display='none'" 
+              class="w3-button w3-display-topright">&times;</span>
+              <h2>Modal Header</h2>
+            </header>
+            <div class="w3-container">
+              <p></p>
+              <p></p>
+            </div>
+            <footer class="w3-container w3-teal">
+              <p>Modal Footer</p>
+            </footer>
+            <br>
+          </div>
+        </div>
+      </div>
+
+</body>
+</html>
